@@ -53,7 +53,19 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+function goCatalogo(){
+  document.body.scrollTop = 490;
+  document.documentElement.scrollTop = 490;
+}
+
+function goInfo(){
+  document.body.scrollTop = 1100;
+  document.documentElement.scrollTop = 1100;
+}
 </script>  
+
+
 <!-- Lingue -->
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
   <a class="navbar-brand" href="#"><img src="img/ita.jpg" alt=""></a>
@@ -62,18 +74,18 @@ function topFunction() {
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
+      <a class="nav-link" href="#"><img src="img/spa.jpg" alt=""></a>
       <a class="nav-link active" href="#"> <img src="img/eng.jpg" alt=""> <span class="sr-only">(current)</span></a>
       <a class="nav-link" href="#"><img src="img/rus.jpg" alt=""></a>
       <a class="nav-link" href="#"><img src="img/fra.jpg" alt=""></a>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
-          Dropdown
+          Menu
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="pages/email.html">Contattaci</a>
+          <a class="dropdown-item" onclick="goCatalogo()">Catalogo</a>
+          <a class="dropdown-item" onclick="goInfo()">Informazioni</a>
         </div>
       </li>
     </div>
